@@ -149,7 +149,11 @@
         ```
     2. Mutation to remove the listing:
         ```javascript
-        
+        mutation removeListing{
+            removeListing(id: "") {
+                title
+            }
+        }
         ```
 
 ## Check mongo db in docker:
