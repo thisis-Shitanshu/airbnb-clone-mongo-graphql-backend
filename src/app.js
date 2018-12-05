@@ -4,7 +4,7 @@ import graphqlHTTP from 'express-graphql';
 
 const app = express();
 
-mongoose.connect('mongodb://mongo/graphql', {
+mongoose.connect('mongodb://mongo:27017/airbnbClone', {
     useNewUrlParser: true
 });
 
