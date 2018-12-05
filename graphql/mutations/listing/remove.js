@@ -10,14 +10,14 @@ import ListingModel from '../../../models/listing';
 export default {
     type: listingType,
     args: {
-        _id: {
-            name: '_id',
+        id: {
+            name: 'id',
             type: new GraphQLNonNull(GraphQLID)
         }
     },
     async resolve (root, params, options) {
         const removedListing = await ListingModel
-            .findByIdAndRemove(params._id)
+            .findByIdAndRemove(params.id)
             .exec();
 
             if (!removedListing) {

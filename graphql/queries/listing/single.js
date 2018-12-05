@@ -12,8 +12,8 @@ import ListingModel from '../../../models/listing';
 export default {
     type: listingType,
     args: {
-        _id: {
-            name: '_id',
+        id: {
+            name: 'id',
             type: new GraphQLNonNull(GraphQLID)
         }
     },

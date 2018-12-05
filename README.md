@@ -135,3 +135,28 @@
         - docker-container.yml
 
 - Test the backend in GraphiQL.
+    1. Mutation addListing Command:
+        ```javascript
+        mutation addListing {
+            addListing(data: {
+                title: "First listing",
+                description: "Some description..."
+            }) {
+                id,
+                title
+            }
+        }
+        ```
+    2. Mutation to remove the listing:
+        ```javascript
+        
+        ```
+
+## Check mongo db in docker:
+- Run:
+    - *docker exec -it [mongo_container_id] mongo*
+    - In console:
+        - show dbs
+        - use airbnbClone
+        - show collections
+        - db.listings.find()
