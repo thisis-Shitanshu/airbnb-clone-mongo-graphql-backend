@@ -21,7 +21,7 @@
     - *docker-compose up*
     - This will download and run the image.
 
-# 2 Backend for Airbnb App Clone - GraphQL project structure
+# 2: Backend for Airbnb App Clone - GraphQL project structure
 - In this section we'll start creatng a basic graphQL project structure with a simple mutation and query.
 
 - Adding to directory:
@@ -95,3 +95,7 @@
         - Will be use to merge multipple mutaions together.
     - The "listing" type is used for returning a listing while the "listing-input" type will be used to add a listing.
 
+# 4: Backend for Airbnb App Clone - GraphQL mutations part 2
+- The way the previous section work is:
+    - By using the mongoose model,
+        - we can import it anywhere we need to do something with databse because it is connected in the app.js.
