@@ -21,7 +21,7 @@
     - *docker-compose up*
     - This will download and run the image.
 
-#2 Backend for Airbnb App Clone - GraphQL project structure
+# 2 Backend for Airbnb App Clone - GraphQL project structure
 - In this section we'll start creatng a basic graphQL project structure with a simple mutation and query.
 
 - Adding to directory:
@@ -54,4 +54,44 @@
 1. Add mongo port. - app.js
 1. Error: import not recognized:
     - Let's add babel polyfill
+
+# 3: Backend for Airbnb App Clone - GraphQL mutations part 1
+- Continuing with GraphQL setup.
+
+- Adding to directory:
+    - root:
+        - graphql
+            - **index.js**
+            - mutations
+                - **index.js**
+                - **listing**
+                    - **add.js**
+                    - **index.js**
+                    - **remove-all.js**
+                    - **remove.js**
+            - queries
+            - types
+                - **listing.js**
+                - **listing-input.js**
+        - models
+            - **listing.js**
+        - src
+            - index.js
+            - app.js
+        - package.json
+        - Dockerfile
+        - .babelrc
+        - docker-container.yml
+
+1. First we'll create a simple mongoose model for the "listing" data.
+    - This "listing" is actually an Airbnb Property.
+1. Add an Express route for graphql. - app.js
+1. Rebuild the docker-compose.
+    - Go to route: localhost:8080/graphql
+    - Now the Graphiql routes prperly.
+    - Next, we need to create some mutaion and queries.
+1. Let's create some mutation first.
+    - The file index.js in mutations directory:
+        - Will be use to merge multipple mutaions together.
+    - The "listing" type is used for returning a listing while the "listing-input" type will be used to add a listing.
 
