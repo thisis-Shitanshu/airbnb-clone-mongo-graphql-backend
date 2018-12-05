@@ -164,3 +164,5 @@
         - use airbnbClone
         - show collections
         - db.listings.find()
+
+# Now we will move to front-end to add Apollo GraphQL to react-native app and try to connect to this sample backend.
