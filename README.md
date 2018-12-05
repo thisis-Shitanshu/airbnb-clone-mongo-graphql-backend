@@ -99,3 +99,39 @@
 - The way the previous section work is:
     - By using the mongoose model,
         - we can import it anywhere we need to do something with databse because it is connected in the app.js.
+
+# 5: Backend for Airbnb App Clone - GraphQL queries and testing
+- Let's create the graphQL queries,
+    - which will be used to the listing from DB.
+
+- Adding to directory:
+    - root:
+        - graphql
+            - index.js
+            - mutations
+                - index.js
+                - listing
+                    - add.js
+                    - index.js
+                    - remove-all.js
+                    - remove.js
+            - queries
+                - **index.js**
+                - **listing**
+                    - **index.js**
+                    - **single.js**
+                    - **multiple.js**
+            - types
+                - listing.js
+                - listing-input.js
+        - models
+            - listing.js
+        - src
+            - index.js
+            - app.js
+        - package.json
+        - Dockerfile
+        - .babelrc
+        - docker-container.yml
+
+- Test the backend in GraphiQL.
